@@ -1,3 +1,3 @@
-# My NeoVim Config Files
+# Config Files
 
 ![NeoVim Screenshot](neovim_screenshot.png)
