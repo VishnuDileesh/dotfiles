@@ -16,6 +16,6 @@
 
 > qutebrowser config path: ~/.config/qutebrowser/config.py
 
-
+> xfce4 terminal config path: ~/.config/xfce4/terminal/terminalrc
 
 
