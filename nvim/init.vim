@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-markdown'
 	Plug 'ap/vim-css-color'
 	Plug 'vim-scripts/fountain.vim'
-	Plug 'morhetz/gruvbox'
+"	Plug 'morhetz/gruvbox'
   Plug 'vim-python/python-syntax'
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
@@ -28,12 +28,15 @@ call plug#begin('~/.vim/plugged')
   Plug 'google/vim-codefmt'
   Plug 'google/vim-glaive'
   Plug 'dense-analysis/ale'
-  Plug 'dracula/vim',{'as':'dracula'}
   Plug 'liuchengxu/vim-which-key'
   Plug 'justinmk/vim-sneak'
   Plug 'unblevable/quick-scope'
   Plug 'sheerun/vim-polyglot'
   Plug 'dense-analysis/ale'
+" Themes
+  Plug 'dracula/vim',{'as':'dracula'}
+"  Plug 'cocopon/iceberg.vim'
+  Plug 'ghifarit53/tokyonight-vim'
 call plug#end()
 
 " General Settings
@@ -43,6 +46,9 @@ set encoding=UTF-8
 syntax enable
 syntax on
 set noswapfile
+set nobackup
+set incsearch
+set nohlsearch
 set scrolloff=7
 set autoread
 set wildmenu
@@ -52,7 +58,7 @@ set shiftwidth=2
 set autoindent
 set smartindent
 set expandtab
-set hls is
+" set hls is
 set ic
 set laststatus=2
 set cmdheight=1
@@ -62,13 +68,28 @@ filetype plugin on
 "colorscheme gruvbox
 "set background=dark
 
-colorscheme dracula
-
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+" colorscheme dracula 
 
 
-" Key Bindings
+
+
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+"
+
+if(has("termguicolors"))
+  set termguicolors
+  hi LineNr ctermbg=NONE guibg=NONE
+endif
+
+let g:tokyonight_style = 'night' "available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
+
+
+
+"Key Bindings
 let mapleader = ","
 map <C-Space> :Goyo<CR>
 map <C-l> :set background=light<CR>
@@ -135,6 +156,8 @@ let g:user_emmet_leader_key=','
 " Quotes key mapping
 :nnoremap <Leader>q" ciw""<Esc>P
 :nnoremap <Leader>q' ciw''<Esc>P'"
+
+au! BufNewFile,BufRead *.svelte set ft=html
 
 
 " Coc config

@@ -70,8 +70,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-source ~/.profile
 
 # User configuration
 
@@ -95,6 +93,17 @@ source ~/.profile
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# Aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#alias neofetch='neofetch --w3m --source ~/.cache/wal/sequences'
+alias neofetch='neofetch --ascii_distro ubuntu'
+
+
+
+source $ZSH/oh-my-zsh.sh
+source ~/.profile
+
+# Import wal theme
+(cat ~/.cache/wal/sequences &)
