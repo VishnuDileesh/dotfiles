@@ -24,6 +24,7 @@ load {
         format = "%5min Load"
 }
 
+
 cpu_temperature 0 {
         #format = "<span background='#bf616a'> %degrees °C </span>"
         format = "%degrees °C" 
