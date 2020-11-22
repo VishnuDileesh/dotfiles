@@ -1,3 +1,3 @@
-# Config Files
+# Linux Rice Config Files
 
-![NeoVim Screenshot](neovim_screenshot.png)
+![Linux rice coder edition screenshot](linux-rice-coder-edition-screenshot.png)
