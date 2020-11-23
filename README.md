@@ -18,4 +18,6 @@
 
 > xfce4 terminal config path: ~/.config/xfce4/terminal/terminalrc
 
+> ranger config path: ~/.config/ranger/rc.conf
 
+> rifle config path: ~/.config/ranger/rifle.conf
