@@ -2,6 +2,8 @@
 
 ![Linux rice coder edition screenshot](linux-rice-coder-edition-screenshot.png)
 
+## Config paths
+
 > i3 config path: ~/.config/i3/config
 
 > i3status config path: ~/.config/i3status/config
@@ -21,3 +23,4 @@
 > ranger config path: ~/.config/ranger/rc.conf
 
 > rifle config path: ~/.config/ranger/rifle.conf
+
